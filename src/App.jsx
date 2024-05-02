@@ -1,13 +1,19 @@
 import { useState } from 'react'
+import { Outlet } from "react-router-dom";
 import './App.css'
+import LeftNavBar from './components/LeftNavBar';
+import WordleSolver from './wordle_solver';
 
-function App() {
+const solver = new WordleSolver();
+
+export default function App() {
 
   return (
     <>
-      <p>Hello World!</p>
+      <LeftNavBar />
+      <div className='right-box'>
+        <Outlet />
+      </div>
     </>
   )
 }
-
-export default App

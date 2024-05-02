@@ -1,5 +1,9 @@
+*{
+  margin: 0px;
+}
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Lexend Deca', sans-serif, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -31,8 +35,13 @@ body {
 }
 
 h1 {
+  margin: 10px;
   font-size: 3.2em;
   line-height: 1.1;
+}
+
+p{
+  white-space: pre-wrap;
 }
 
 button {
@@ -46,13 +55,6 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -61,8 +63,5 @@ button:focus-visible {
   }
   a:hover {
     color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
   }
 }
