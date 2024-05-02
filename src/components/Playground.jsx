@@ -97,36 +97,36 @@ export default function Playground() {
     setWord3("");
     setWord4("");
     setWord5("");
-    setColor11
-setColor12("w");
-setColor13("w");
-setColor14("w");
-setColor15("w");
-setColor16("w");
-setColor21("w");
-setColor22("w");
-setColor23("w");
-setColor24("w");
-setColor25("w");
-setColor26("w");
-setColor31("w");
-setColor32("w");
-setColor33("w");
-setColor34("w");
-setColor35("w");
-setColor36("w");
-setColor41("w");
-setColor42("w");
-setColor43("w");
-setColor44("w");
-setColor45("w");
-setColor46("w");
-setColor51("w");
-setColor52("w");
-setColor53("w");
-setColor54("w");
-setColor55("w");
-setColor56("w");
+    setColor11("w");
+    setColor12("w");
+    setColor13("w");
+    setColor14("w");
+    setColor15("w");
+    setColor16("w");
+    setColor21("w");
+    setColor22("w");
+    setColor23("w");
+    setColor24("w");
+    setColor25("w");
+    setColor26("w");
+    setColor31("w");
+    setColor32("w");
+    setColor33("w");
+    setColor34("w");
+    setColor35("w");
+    setColor36("w");
+    setColor41("w");
+    setColor42("w");
+    setColor43("w");
+    setColor44("w");
+    setColor45("w");
+    setColor46("w");
+    setColor51("w");
+    setColor52("w");
+    setColor53("w");
+    setColor54("w");
+    setColor55("w");
+    setColor56("w");
   }
 
   function openWordsLeft(){
@@ -173,7 +173,7 @@ setColor56("w");
       {wordsLeftOpen && (<WordsLeftPopUp closeWindow={() => {setWordsLeftOpen(false)}} wordList={wordList}/>)}
       {bestGuessOpen && (<BestGuessPopUp closeWindow={() => {setBestGuessOpen(false)}} bestGuess={bestGuess}/>)}
       {testGuessOpen && (<TestGuessPopUp closeWindow={() => {setTestGuessOpen(false)}} wordList={wordList}/>)}
-      {directionsOpen && (<DirectionsPopUp closeWindow={() => {setDirectionsOpen(false)}} directions={'Type the words you have guessed in Wordle in the corresponding boxes.\n\nAdjust the colors seen on your guesses and click "Submit"\n\nThe optimal guess will appear along with all of the words that the answer could be.'}/>)}
+      {directionsOpen && (<DirectionsPopUp closeWindow={() => {setDirectionsOpen(false)}} directions={'Type the words you have guessed in Wordle in the corresponding boxes.\n\nAdjust the colors seen on your guesses.\n\nChoose one of the green buttons depending on what functionality you would like:\n"Words Left" provides a list of all of the words that the answer could be.\n"Best Guess" provides the best next guess.\n"Test Guess" lets you provide a word and, a score (out of 100) is provided for that word.'}/>)}
     </div>
   )
   }
