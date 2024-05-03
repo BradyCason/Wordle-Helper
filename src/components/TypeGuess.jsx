@@ -9,6 +9,15 @@ export default function TypeGuess({wordNum, setWord, color1, color2, color3, col
   const [letter5, setLetter5] = useState("");
 
   function wordChange(e){
+    e.preventDefault()
+    let regex = /^[a-zA-Z]+$/;
+    let newString = ""
+    for (let i = 0; i < e.target.value.length; i++){
+        if (regex.test(e.target.value[i])){
+            newString += e.target.value[i].toUpperCase()
+        }
+    }
+    e.target.value = newString;
     let newWord = e.target.value;
     setWord(newWord);
     setLetter1(newWord.slice(0,1));
@@ -20,7 +29,7 @@ export default function TypeGuess({wordNum, setWord, color1, color2, color3, col
 
   return (
     <div className="vert-flex">
-      <input className="button type-guess-input" placeholder={"Word " + wordNum}maxLength={5} type="text" onChange={wordChange}></input>
+      <input className="button type-guess-input" placeholder={"Word " + wordNum} maxLength={5} type="text" onChange={wordChange}></input>
       <div style={{display: "flex", marginBottom: "5px"}}>
         <ColorSquare letter={letter1} color={color1} onClick={changeColor1}/>
         <ColorSquare letter={letter2} color={color2} onClick={changeColor2}/>

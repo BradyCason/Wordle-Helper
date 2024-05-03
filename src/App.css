@@ -15,6 +15,10 @@
   flex: 1;
   padding: 10px;
   filter: drop-shadow(0 0 0.2rem black);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .right-box{
@@ -83,6 +87,20 @@
 .button-grey:hover{
   background-color: #5f6366;
   border-color: #5f6366;
+  color: white;
+}
+
+.button-dark-grey{
+  background-color: #565a5d;
+  border: 2px solid #565a5d;
+  color: white;
+  margin: 4px;
+  width: 200px;
+}
+
+.button-dark-grey:hover{
+  background-color: #4a4e51;
+  border-color: #4a4e51;
   color: white;
 }
 
