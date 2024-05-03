@@ -10,7 +10,6 @@ import BottomButtonsPlayground from "./BottomButtonsPlayground";
 export default function Playground() {
   let solver = new WordleSolver();
   const [wordList, setWordList] = useState(solver.wordList);
-  const [attemptNum, setAttemptNum] = useState(1);
 
   const [wordsLeftOpen, setWordsLeftOpen] = useState(false);
   const [bestGuessOpen, setBestGuessOpen] = useState(false);
@@ -80,7 +79,6 @@ export default function Playground() {
     }
     console.log(tempWordList)
     setWordList(tempWordList);
-    setAttemptNum(tempAttemptNum);
     return([tempAttemptNum, tempWordList])
   }
 

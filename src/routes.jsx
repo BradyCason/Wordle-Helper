@@ -8,7 +8,8 @@ const routes = [
       element: <App />,
       children: [
         { path: "optimal-solve", element: <OptimalSolvePage />},
-        { path: "playground", element: <Playground />}
+        { path: "playground", element: <Playground />},
+        { path: "/", element: <div style={{height: "100vh", display:"flex", alignItems:"center", justifyContent:"center"}}><h2>Choose a mode on the left to get started!</h2></div>}
       ]
     },
   ];
