@@ -5,7 +5,6 @@
 :root {
   font-family: 'Lexend Deca', sans-serif, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
-  font-weight: 400;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -34,9 +33,16 @@ body {
   min-height: 100vh;
 }
 
+h2{
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
 p{

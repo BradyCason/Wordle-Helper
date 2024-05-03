@@ -1,7 +1,7 @@
 import ColorSquare from "./ColorSquare"
 import { useState } from "react"
 
-export default function TypeGuess({setWord, color1, color2, color3, color4, color5, changeColor1, changeColor2, changeColor3, changeColor4, changeColor5}) {
+export default function TypeGuess({wordNum, setWord, color1, color2, color3, color4, color5, changeColor1, changeColor2, changeColor3, changeColor4, changeColor5}) {
   const [letter1, setLetter1] = useState("");
   const [letter2, setLetter2] = useState("");
   const [letter3, setLetter3] = useState("");
@@ -20,7 +20,7 @@ export default function TypeGuess({setWord, color1, color2, color3, color4, colo
 
   return (
     <div className="vert-flex">
-      <input className="type-guess-input" maxLength={5} type="text" onChange={wordChange}></input>
+      <input className="button type-guess-input" placeholder={"Word " + wordNum}maxLength={5} type="text" onChange={wordChange}></input>
       <div style={{display: "flex", marginBottom: "5px"}}>
         <ColorSquare letter={letter1} color={color1} onClick={changeColor1}/>
         <ColorSquare letter={letter2} color={color2} onClick={changeColor2}/>

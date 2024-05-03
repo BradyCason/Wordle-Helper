@@ -32,8 +32,8 @@ export default function TestGuessPopUp({closeWindow, wordList}) {
           <span className="close" onClick={closeWindow}>&times;</span>
           <h2>Test Guess</h2>
           <form onSubmit={findScore}>
-            <input required onChange={deleteNonAlph}minLength="5" maxLength="5" title="Please use only alphabetic characters" id="test-guess-input" type="text"></input>
-            <input type="submit"></input>
+            <input className="button" required onChange={deleteNonAlph}minLength="5" maxLength="5" title="Please use only alphabetic characters" id="test-guess-input" type="text"></input>
+            <input className="button" type="submit"></input>
           </form>
 
           <p>{text}{score}</p>
