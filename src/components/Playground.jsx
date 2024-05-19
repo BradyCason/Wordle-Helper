@@ -58,26 +58,25 @@ export default function Playground() {
     let tempWordList = solver.wordList;
     let tempAttemptNum = 1
     if (word1.length == 5){
-      tempWordList = solver.narrowList(word1, [color11, color12, color13, color14, color15], tempWordList);
+      tempWordList = solver.narrowList(word1.toLowerCase(), [color11, color12, color13, color14, color15], tempWordList);
       tempAttemptNum++;
     }
     if (word2.length == 5){
-      tempWordList = solver.narrowList(word2, [color21, color22, color23, color24, color25], tempWordList);
+      tempWordList = solver.narrowList(word2.toLowerCase(), [color21, color22, color23, color24, color25], tempWordList);
       tempAttemptNum++;
     }
     if (word3.length == 5){
-      tempWordList = solver.narrowList(word3, [color31, color32, color33, color34, color35], tempWordList);
+      tempWordList = solver.narrowList(word3.toLowerCase(), [color31, color32, color33, color34, color35], tempWordList);
       tempAttemptNum++;
     }
     if (word4.length == 5){
-      tempWordList = solver.narrowList(word4, [color41, color42, color43, color44, color45], tempWordList);
+      tempWordList = solver.narrowList(word4.toLowerCase(), [color41, color42, color43, color44, color45], tempWordList);
       tempAttemptNum++;
     }
     if (word5.length == 5){
-      tempWordList = solver.narrowList(word5, [color51, color52, color53, color54, color55], tempWordList);
+      tempWordList = solver.narrowList(word5.toLowerCase(), [color51, color52, color53, color54, color55], tempWordList);
       tempAttemptNum++;
     }
-    console.log(tempWordList)
     setWordList(tempWordList);
     return([tempAttemptNum, tempWordList])
   }
